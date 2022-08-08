@@ -1195,6 +1195,12 @@ div
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-left: 50px;
+}
+
+.contact-input-comment
+{
+    padding-left: 50px;
 }
 
 .contact-input:focus 
@@ -1279,20 +1285,22 @@ div
 .contact-cbox:checked 
 {
     border-color: var(--bg-color);
+    border-radius: 4px;
 }
 
 .contact-cbox::before 
 {
     content: '';
-    width: 16px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
     box-shadow: inset 1em 1em var(--bg-color);
-    /* border-radius: 4px; */
+    border-radius: 4px;
 }
 
-.contact-cbox:checked::before {
+.contact-cbox:checked::before 
+{
     transform: scale(1);
 }
 
