@@ -475,9 +475,72 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="close-modal" type="button" data-modal-close>X</button>
+    <div class="modal-container">
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button 
+          class="close-modal" type="button" data-modal-close>X
+          </button>
+          
+          <form name="contact-form" autocomplete="on" class="contact-form">
+            <h2>Zostaw swoje dane w formularzu poniżej</h2>
+            <label>
+              Imię
+
+              <input type="text" name="contact-name" class="contact-input contact-name" />
+              <svg class="icon icon-user contact-icon">
+                <use xlink:href="images/sprite.svg#icon-user"></use>
+                <!--  -->
+              </svg>
+            </label>
+
+            <label>
+              Telefon
+              <input
+                type="tel"
+                name="contact-phone"
+                class="contact-input contact-phone"
+              />
+              <svg class="icon icon-phone contact-icon">
+                <use xlink:href="images/sprite.svg#icon-phone2"></use>
+              </svg>
+            </label>
+
+            <label>
+              Email
+              <input
+                type="email"
+                name="contact-email"
+                class="contact-input contact-email"
+              />
+              <svg class="icon icon-phone contact-icon">
+                <use xlink:href="images/sprite.svg#icon-envelope-fill"></use>
+              </svg>
+            </label>
+
+            <label>
+              Komentarz
+              <textarea
+                name="contact-comment"
+                placeholder="Wprowadź tekst..."
+                class="contact-input-comment contact-comment"
+              ></textarea>
+            </label>
+            <label class="contact-cbox-label"
+              ><input type="checkbox" name="contact-rules-accept" class="contact-cbox" />
+              <svg class="icon icon-checked">
+                <use xlink:href="images/sprite.svg#icon-checked"></use>
+              </svg>
+              <p>
+                Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                <a href="#">Politykę Prywatności</a>.
+              </p>
+            </label>
+            <button type="submit" name="contact-submit" class="contact-submit">
+              Wyślij
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 
