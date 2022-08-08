@@ -25,7 +25,7 @@
     width: 100%;
 }
 
-.web-header .topbar 
+.web-header .topbar-container 
 {
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@
     height: 80px;
 }
 
-.web-header .topbar .main-logo
+.web-header .topbar-container .main-logo
 {
     font-family: "Raleway", sans-serif;
     font-size: 26px;
@@ -45,7 +45,7 @@
     letter-spacing: 0.03em;
 }
 
-.web-header .topbar .main-logo a 
+.web-header .topbar-container .main-logo a 
 {
     display: flex;
     color: var(--first-word-logo);
@@ -88,36 +88,36 @@
     text-decoration: none;
 }
 
-.web-header .topbar .main-logo a:focus,
-.web-header .topbar .main-logo a:hover
+.web-header .topbar-container .main-logo a:focus,
+.web-header .topbar-container .main-logo a:hover
 {
     color: var(--hover-focus);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     outline: none;
 }
 
-.web-header .topbar .main-logo a span 
+.web-header .topbar-container .main-logo a span 
 {
     color: var(--second-word-logo);
 }
 
-.web-header .topbar .topbar-menu 
+.web-header .topbar-container .topbar-menu 
 {
     list-style-type: none;
     margin: 0px;
 }
 
-.web-header .topbar .topbar-menu li 
+.web-header .topbar-container .topbar-menu li 
 {
     display: inline-block;
 }
 
-.web-header .topbar .topbar-menu li:not(:last-child) 
+.web-header .topbar-container .topbar-menu li:not(:last-child) 
 {
     margin-right: 46px;
 }
 
-.web-header .topbar .topbar-menu li a 
+.web-header .topbar-container .topbar-menu li a 
 {
 
     font-weight: 500;
@@ -129,26 +129,26 @@
     letter-spacing: 0.02em;
 }
 
-.web-header .topbar .topbar-menu li a:hover,
-.web-header .topbar .topbar-menu li a:focus 
+.web-header .topbar-container .topbar-menu li a:hover,
+.web-header .topbar-container .topbar-menu li a:focus 
 {
     color: var(--top-hover-focus);
         transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     outline: none;
 }
 
-.web-header .topbar .contact-us 
+.web-header .topbar-container .contact-us 
 {
     list-style: none;
     padding-left: 364px;
 }
 
-.web-header .topbar .contact-us li 
+.web-header .topbar-container .contact-us li 
 {
     display: inline-block;
 }
 
-.web-header .topbar .contact-us li:last-child 
+.web-header .topbar-container .contact-us li:last-child 
 {
     padding-left: 50px;
 }
@@ -173,7 +173,7 @@
     outline: none;
 }
 
-.web-header .topbar .contact-us a 
+.web-header .topbar-container .contact-us a 
 {
     text-decoration: none;
     font-weight: 500;
@@ -186,8 +186,8 @@
     align-items: center;
 }
 
-.web-header .topbar .contact-us a:hover,
-.web-header .topbar .contact-us a:focus 
+.web-header .topbar-container .contact-us a:hover,
+.web-header .topbar-container .contact-us a:focus 
 {
     color: var(--top-hover-focus);
         transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
