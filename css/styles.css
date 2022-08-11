@@ -1259,12 +1259,13 @@ div
     text-decoration: underline;
 }
 
-.contact-cbox-label p
+.contact-cbox-label p 
 {
     margin: 0;
 }
 
-.contact-cbox
+/* PUSTE POLE */
+.contact-cbox 
 {
     width: 18px;
     height: 18px;
@@ -1289,7 +1290,7 @@ div
 .contact-cbox:checked 
 {
     border-color: var(--bg-color);
-    border-radius: 4px;
+    /* border-radius: 2px; */
 }
 
 .contact-cbox::before 
@@ -1301,6 +1302,7 @@ div
     transition: 120ms transform ease-in-out;
     box-shadow: inset 1em 1em var(--bg-color);
     border-radius: 4px;
+    background-color: var(--bg-color);
 }
 
 .contact-cbox:checked::before 
